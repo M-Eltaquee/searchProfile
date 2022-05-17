@@ -25,6 +25,49 @@ body{
     text-align: center;
     font-weight: 800;
 }
+.bull.two{
+  animation-delay: 0.5s;
+}
+.bull.three{
+  animation-delay: 1s;
+}
+
+.bull{
+  animation: loading 1.5s ease infinite;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-animation: loading 1.5s ease infinite;
+}
+@keyframes loading {
+  0%{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+50%{
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+100%{
+  transform:scale(1);
+  -webkit-transform:scale(1);
+  -moz-transform:scale(1);
+  -ms-transform:scale(1);
+  -o-transform:scale(1);
+}
+}
 .flex{
   height: 100vh;
   display: flex;
