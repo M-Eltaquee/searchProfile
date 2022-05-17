@@ -1,0 +1,104 @@
+:root{
+  --main-color: #3b5998;
+  --second-color: #3876f9;
+  --third-color: #dfe3ee;
+  --four-color: #f7f7f7;
+  --fifth-color: #ffffff;
+  --text-color: #333;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-size: 14px;
+  color: var(--fifth-color);
+  padding: 20px;
+}
+.hide{
+  display: none !important;
+}
+.load {
+  font-size: 40px;
+    padding: 50px;
+    text-align: center;
+    font-weight: 800;
+}
+.flex{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profiles-box{
+  box-shadow: var(--four-color) 2px 1px 5px;
+  width: 300px;
+}
+.profiles-box .heading{
+  background-color: var(--second-color);
+  padding: 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  line-height: 1.4;
+}
+.profiles-box .heading h3{
+
+}
+.profiles-box .heading p{
+  margin-bottom: 15px;
+    color: var(--four-color);
+    margin-top: 5px;
+
+}
+.profiles-box .heading input{
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: none;
+  padding: 10px 10px;
+  background-color: var(--main-color);
+  outline: none;
+  display: block;
+  width: 100%;
+  margin:auto
+}
+.profiles-box .heading input::placeholder{
+  color: var(--third-color);
+}
+
+.profiles-box .body{
+  color: var(--text-color);
+  border: 1px solid #e3dcdc;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+.profiles-box .body .profile-item{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+.profiles-box .body .profile-item .profile-img{
+  width: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 10px
+}
+.profiles-box .body .profile-item-text{
+
+}
+.profiles-box .body .profile-item .profile-name{
+  margin-bottom: 5px;
+
+}
+.profiles-box .body .profile-item .profile-location {
+  color: #777;
+}
