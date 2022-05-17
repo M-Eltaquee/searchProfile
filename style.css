@@ -25,13 +25,6 @@ body{
     text-align: center;
     font-weight: 800;
 }
-.bull.two{
-  animation-delay: 0.5s;
-}
-.bull.three{
-  animation-delay: 1s;
-}
-
 .bull{
   animation: loading 1.5s ease infinite;
   display: inline-block;
@@ -44,6 +37,12 @@ body{
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   -webkit-animation: loading 1.5s ease infinite;
+}
+.bull.two{
+  animation-delay: 0.5s;
+}
+.bull.three{
+  animation-delay: 1s;
 }
 @keyframes loading {
   0%{

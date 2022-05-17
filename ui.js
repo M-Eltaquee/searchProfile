@@ -1,9 +1,8 @@
-const profilesBody = document.getElementsByClassName("body")
+const profilesBody = document.querySelector(".body")
 const load = document.getElementById(".load")
 
 export class UI {
   showProfiles(profiles) {
-
     let html = "";
 
     profiles.forEach(element => {
@@ -22,7 +21,8 @@ export class UI {
         </div>
     </div>`
     });
-    profilesBody[0].innerHTML = html
+
+    profilesBody.innerHTML = html
 
   }
 
